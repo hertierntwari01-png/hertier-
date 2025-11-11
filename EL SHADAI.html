@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELYONSHOPIER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8fbff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .logo {
+      color: #d35400;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: bold;
+    }
+
+    .cart {
+      position: relative;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .cart-count {
+      background: #e74c3c;
+      color: #fff;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+      position: absolute;
+      top: -8px;
+      right: -10px;
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px 40px;
+      align-items: center;
+    }
+
+    .filter-bar button {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .filter-bar .active {
+      background: #ff5c00;
+      color: white;
+      border: none;
+    }
+
+    .filter-bar input {
+      flex-grow: 1;
+      max-width: 250px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      margin-left: auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      color: #d35400;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">ELYONSHOPIER</h1>
+    <div class="top-bar">
+      <span class="market">Market</span>
+      <span class="cart">🛒<span class="cart-count">0</span></span>
+    </div>
+  </header>
+
+  <nav class="filter-bar">
+    <button class="active">All</button>
+    <button>Men’s clothing</button>
+    <button>Jewelery</button>
+    <button>Electronics</button>
+    <button>Women’s clothing</button>
+    <input type="text" placeholder="Search products...">
+  </nav>
+
+  <main class="products">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1478610652/photo/hcmc-vietnam-macbook-pro-14-inches-m2.jpg?s=612x612&w=0&k=20&c=r7n3ZWk5KbIEW6MmpAGWaXsUIKvL-KgskI6fS-t5jv4=" alt="MacBook">
+      <h2>Macbook pro</h2>
+      <p>Your choise is in your hands cause future is in front of you.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/458068097/photo/adidas-superstar.jpg?s=612x612&w=0&k=20&c=cBTSduk5_pPHdQi-Qz_YgJrkceHM4Wk4oDww5O_vwaw=" alt="Adidas shoes">
+      <h2>Mens Casual Premium Slim Fit shoes</h2>
+      <p>Slim-fitting style, shoes fiteness and styled to be clean and classic.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/157692462/photo/front-of-black-leather-jacket-isolated-on-white-w-clipping-path.jpg?s=612x612&w=0&k=20&c=Dt9BAaU1O38SuIQEpoJoOQu0OcX-9za-DRD1MfIbOnw=" alt="Jacket">
+      <h2>Mens Cotton Jacket</h2>
+      <p>Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, soft and stylish...</p>
+    </div>
+  </main>
+</body>
+</html>
